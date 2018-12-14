@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Google search tests">
+
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserName" value="firefox"/>
+    <test name="Positive">
+        <classes>
+            <class name="tests.GoogleSearchTest">
+                <methods>
+                    <include name="positiveSearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

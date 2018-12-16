@@ -10,5 +10,5 @@ How to run tests from this project:
 4. Clone repository with source code via Git;
 5. In command line to cd to project root folder;
 6. To run test from command line use following command:
-mvn clean install -DsuiteName=single_test_example.xml
+mvn clean install -DsuiteName=suiteName.xml
 where single_test_example.xml is a name of specific TestNG xml file with tests.

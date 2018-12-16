@@ -14,6 +14,7 @@ public abstract class BasePage {
 
     /**
      * Method which wait some element on page with hardcoded timeOut
+     *
      * @param elementToWaitFor - WebElement which wants to show
      */
     protected void waitUntilElementIsVisible(WebElement elementToWaitFor) {
@@ -22,6 +23,7 @@ public abstract class BasePage {
 
     /**
      * Method which wait some element on page
+     *
      * @param elementToWaitFor - WebElement which wants to show
      * @param timeOutInSeconds - value for wait
      */

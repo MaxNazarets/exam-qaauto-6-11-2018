@@ -25,6 +25,7 @@ public class SearchResultsPage extends BasePage {
 
     /**
      * Constructor of SearchResultsPage class.
+     *
      * @param driver - webDriver instance from Test.
      */
     public SearchResultsPage(WebDriver driver) {
@@ -34,6 +35,7 @@ public class SearchResultsPage extends BasePage {
 
     /**
      * Method to check if page is loaded.
+     *
      * @return true/false
      */
     public boolean isPageLoaded() {
@@ -44,6 +46,7 @@ public class SearchResultsPage extends BasePage {
 
     /**
      * Method to get SearchResults count of elements.
+     *
      * @return count of elements.
      */
     public int getSearchResultsCount() {
@@ -52,6 +55,7 @@ public class SearchResultsPage extends BasePage {
 
     /**
      * Method to get Array of String searchResultsList and get Text values from each element.
+     *
      * @return Array of searchResultsList text.
      */
     public List<String> getSearchResults() {
@@ -69,5 +73,6 @@ public class SearchResultsPage extends BasePage {
      */
     public void clickSearchPage2() {
         waitUntilElementIsVisible(searchToolBar);
-        searchPage2.click();}
+        searchPage2.click();
+    }
 }

@@ -35,29 +35,23 @@ public class GoogleSearchTest extends BaseTest {
 
         String searchTerm = "Selenium";
         SearchResultsPage searchResultsPage = homePage.search(searchTerm);
-
         Assert.assertTrue(searchResultsPage.isPageLoaded(), "SearchResultsPage is not loaded");
+
         Assert.assertEquals(searchResultsPage.getSearchResultsCount(), 10, "Count of searchResultsList is not equal 10");
-
         List<String> searchResultsList = searchResultsPage.getSearchResults();
-
         for (String searchResult : searchResultsList) {
             Assert.assertTrue(searchResult.toLowerCase().contains(searchTerm.toLowerCase()),
                     "SearchTerm " + searchTerm + " not found in:\n" + searchResult);
         }
 
         searchResultsPage.clickSearchPage2();
-
         Assert.assertTrue(searchResultsPage.isPageLoaded(), "SearchResultsPage is not loaded");
 
         Assert.assertEquals(searchResultsPage.getSearchResultsCount(), 10, "Count of searchResultsList is not equal 10");
-
         searchResultsPage.getSearchResults();
-
         for (String searchResult : searchResultsList) {
             Assert.assertTrue(searchResult.toLowerCase().contains(searchTerm.toLowerCase()),
                     "SearchTerm " + searchTerm + " not found in:\n" + searchResult);
         }
-
     }
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * PageObject class for HomePage.
  */
-public class HomePage extends BasePage{
+public class HomePage extends BasePage {
 
     @FindBy(xpath = "//input[@name='q']")
     private WebElement searchField;
@@ -18,6 +18,7 @@ public class HomePage extends BasePage{
 
     /**
      * Constructor of HomePage class.
+     *
      * @param driver - WebDriver instance from Test
      */
     public HomePage(WebDriver driver) {
@@ -27,6 +28,7 @@ public class HomePage extends BasePage{
 
     /**
      * Method to check if page is loaded.
+     *
      * @return - true/false
      */
     public boolean isPageLoaded() {
@@ -36,6 +38,7 @@ public class HomePage extends BasePage{
 
     /**
      * Method that fill the searchField and click button 'Search'.
+     *
      * @param searchTerm - String value searchTerm.
      * @return new SearchResultsPage object.
      */
